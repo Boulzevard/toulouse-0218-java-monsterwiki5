@@ -16,6 +16,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".FireLion" />
+        <activity android:name=".Panda" />
+        <activity android:name=".ThunderEagle" />
+        <activity android:name=".Turtle" />
+        <activity android:name=".Rockilla"></activity>
     </application>
 
 </manifest>
