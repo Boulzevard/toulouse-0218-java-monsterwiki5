@@ -8,6 +8,13 @@
     tools:context="fr.wcs.monsterlegendswiki.MainActivity">
 
     <ImageView
+        android:id="@+id/imageView_background"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:background="@drawable/wiki_background1" />
+
+    <ImageView
         android:id="@+id/imageView2"
         android:layout_width="369dp"
         android:layout_height="149dp"
@@ -21,29 +28,30 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="85dp"
-        android:layout_height="100dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="32dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView2"
-        app:srcCompat="@drawable/wizard" />
+        app:srcCompat="@drawable/wizard2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_width="74dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="55dp"
         android:text="Yo maggle"
-        app:layout_constraintStart_toEndOf="@+id/imageView4"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/imageView4"
+        app:layout_constraintTop_toTopOf="@+id/imageView4" />
 
     <ImageView
         android:id="@+id/panda"
         android:layout_width="104dp"
         android:layout_height="85dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/panda_1" />
@@ -54,7 +62,6 @@
         android:layout_height="85dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toStartOf="@+id/thunder_eagle"
         app:layout_constraintHorizontal_bias="0.625"
         app:layout_constraintStart_toEndOf="@+id/panda"
@@ -66,7 +73,6 @@
         android:layout_width="104dp"
         android:layout_height="85dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginTop="64dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
         app:srcCompat="@drawable/thundereagle_1" />
@@ -76,7 +82,7 @@
         android:layout_width="104dp"
         android:layout_height="85dp"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/panda"
         app:srcCompat="@drawable/turtle_1" />
@@ -86,7 +92,7 @@
         android:layout_width="104dp"
         android:layout_height="85dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/thunder_eagle"
         app:srcCompat="@drawable/firelion" />
