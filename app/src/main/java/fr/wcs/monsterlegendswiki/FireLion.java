@@ -45,13 +45,14 @@ public class FireLion extends AppCompatActivity {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
                 int level = i;
-                if (level == 0) {
-                    level = 1;
-                }
+
                 textViewValue.setText(String.valueOf(level));
                 monsterFirelion.evolution(level);
                 fillTextView(monsterFirelion);
-                if (level < 4){
+                if (level == 0 ){
+                    imageViewMonster.setImageResource(R.drawable.eggfirelion);
+                }
+                else if (level < 4){
                     imageViewMonster.setImageResource(R.drawable.firelion);
                 }
                 else if (level < 7){
