@@ -20,6 +20,9 @@ public class FireLion extends AppCompatActivity {
     TextView textViewValue;
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
+    ImageView imagebutton1;
+    ImageView imagebutton2;
+    ImageView imagebutton3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +37,9 @@ public class FireLion extends AppCompatActivity {
         seekBarLevel = findViewById(R.id.seekBar_level);
         textViewValue = findViewById(R.id.textView_value);
         imageViewMonster = findViewById(R.id.imageView_monster);
+        imagebutton1 = findViewById(R.id.imageView_button1);
+        imagebutton2 = findViewById(R.id.imageView_button2);
+        imagebutton3 = findViewById(R.id.imageView_button3);
 
         seekBarLevel.setMax(20);
 
@@ -41,10 +47,33 @@ public class FireLion extends AppCompatActivity {
 
         fillTextView(monsterFirelion);
 
+        imagebutton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(1);
+            }
+        });
+
+        imagebutton2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(4);
+            }
+        });
+
+        imagebutton3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(7);
+            }
+        });
+
+
         seekBarLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
-                int level = i;
+                final int level = i;
+
 
                 textViewValue.setText(String.valueOf(level));
                 monsterFirelion.evolution(level);
@@ -61,6 +90,8 @@ public class FireLion extends AppCompatActivity {
                 else {
                     imageViewMonster.setImageResource(R.drawable.ui_fire_lion_3);
                 }
+
+
 
             }
 
@@ -90,6 +121,8 @@ public class FireLion extends AppCompatActivity {
                 finish();
             }
         });
+
+
 
     }
     public void fillTextView(MyMonster firelion){
