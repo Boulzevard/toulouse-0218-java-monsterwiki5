@@ -126,7 +126,7 @@ public class FireLion extends AppCompatActivity {
 
     }
     public void fillTextView(MyMonster firelion){
-        textViewTitle.setText("Fire Lion level : " + firelion.getmLevel());
+        textViewTitle.setText("level : " + firelion.getmLevel());
         textViewLife.setText("" + firelion.getmLife());
         textViewSpeed.setText("" + firelion.getmSpeed());
         textViewStamina.setText("" + firelion.getmStamina());
