@@ -11,7 +11,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:alpha="0.7"
-        android:background="@drawable/backgroundfire" />
+        android:background="@drawable/backgroundfire"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
 
     <ImageView
         android:id="@+id/retour_fire"
@@ -36,52 +38,49 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_power"
-        android:textColor="#000000"
-        android:textStyle="bold"
+        android:id="@+id/textView_StatPower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginTop="32dp"
         android:text="Power"
+        android:textColor="#000000"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/retour_fire" />
 
     <TextView
-        android:id="@+id/textView_life"
-        android:textColor="#000000"
-        android:textStyle="bold"
+        android:id="@+id/textView_StatLife"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
         android:layout_marginTop="16dp"
         android:text="Life"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_power" />
-
-    <TextView
-        android:id="@+id/textView_speed"
         android:textColor="#000000"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatPower"
+        app:layout_constraintTop_toBottomOf="@+id/textView_StatPower" />
+
+    <TextView
+        android:id="@+id/textView_StatSpeed"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
         android:layout_marginTop="16dp"
         android:text="Speed"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_life" />
-
-    <TextView
-        android:id="@+id/textView_stamina"
         android:textColor="#000000"
         android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
+        app:layout_constraintTop_toBottomOf="@+id/textView_StatLife" />
+
+    <TextView
+        android:id="@+id/textView_StatStamina"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="100dp"
         android:layout_marginTop="16dp"
         android:text="Stamina"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_speed" />
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/textView_StatSpeed" />
 
     <SeekBar
         android:id="@+id/seekBar_level"
@@ -107,7 +106,7 @@
         android:text="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_stamina" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_StatStamina" />
 
     <ImageView
         android:id="@+id/imageView_monster"
@@ -118,5 +117,88 @@
         app:layout_constraintBottom_toTopOf="@+id/textView_value"
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/firelion" />
+
+    <TextView
+        android:id="@+id/textView_Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="80dp"
+        android:layout_marginTop="32dp"
+        android:text="Power :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retour_fire" />
+
+    <TextView
+        android:id="@+id/textView_Life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Life :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_Power"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Power" />
+
+    <TextView
+        android:id="@+id/textView_Speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Speed :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_Life"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Life" />
+
+    <TextView
+        android:id="@+id/textView_Stamina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stamina :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textView_Speed"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Speed" />
+
+    <ImageView
+        android:id="@+id/imageView_power"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Power"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Power"
+        app:layout_constraintTop_toTopOf="@+id/textView_Power"
+        app:srcCompat="@drawable/stat_power" />
+
+    <ImageView
+        android:id="@+id/imageView_life"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Life"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Life"
+        app:layout_constraintTop_toTopOf="@+id/textView_Life"
+        app:srcCompat="@drawable/stat_life" />
+
+    <ImageView
+        android:id="@+id/imageView_"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Speed"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Speed"
+        app:srcCompat="@drawable/stat_speed" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="19dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Stamina"
+        app:srcCompat="@drawable/stat_stamina" />
 
 </android.support.constraint.ConstraintLayout>

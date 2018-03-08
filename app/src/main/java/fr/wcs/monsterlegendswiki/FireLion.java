@@ -27,10 +27,10 @@ public class FireLion extends AppCompatActivity {
         setContentView(R.layout.activity_fire_lion);
 
         textViewTitle = findViewById(R.id.textView_Firelion);
-        textViewPower = findViewById(R.id.textView_power);
-        textViewLife = findViewById(R.id.textView_life);
-        textViewSpeed = findViewById(R.id.textView_speed);
-        textViewStamina = findViewById(R.id.textView_stamina);
+        textViewPower = findViewById(R.id.textView_StatPower);
+        textViewLife = findViewById(R.id.textView_StatLife);
+        textViewSpeed = findViewById(R.id.textView_StatSpeed);
+        textViewStamina = findViewById(R.id.textView_StatStamina);
         seekBarLevel = findViewById(R.id.seekBar_level);
         textViewValue = findViewById(R.id.textView_value);
         imageViewMonster = findViewById(R.id.imageView_monster);
@@ -94,10 +94,10 @@ public class FireLion extends AppCompatActivity {
     }
     public void fillTextView(MyMonster firelion){
         textViewTitle.setText("Fire Lion level : " + firelion.getmLevel());
-        textViewLife.setText("Life : " + firelion.getmLife());
-        textViewSpeed.setText("Speed : " + firelion.getmSpeed());
-        textViewStamina.setText("Stamina : " + firelion.getmStamina());
-        textViewPower.setText("Power : "   + firelion.getmPower());
+        textViewLife.setText("" + firelion.getmLife());
+        textViewSpeed.setText("" + firelion.getmSpeed());
+        textViewStamina.setText("" + firelion.getmStamina());
+        textViewPower.setText(""   + firelion.getmPower());
     }
 }
 
