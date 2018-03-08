@@ -36,7 +36,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/textView_power"
+        android:id="@+id/textView_powerPanda"
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -48,7 +48,7 @@
         app:layout_constraintTop_toBottomOf="@+id/retour_fire" />
 
     <TextView
-        android:id="@+id/textView_life"
+        android:id="@+id/textView_lifePanda"
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -57,10 +57,10 @@
         android:layout_marginTop="16dp"
         android:text="Life"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_power" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_powerPanda" />
 
     <TextView
-        android:id="@+id/textView_speed"
+        android:id="@+id/textView_speedPanda"
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -69,10 +69,10 @@
         android:layout_marginTop="16dp"
         android:text="Speed"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_life" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_lifePanda" />
 
     <TextView
-        android:id="@+id/textView_stamina"
+        android:id="@+id/textView_staminaPanda"
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -81,10 +81,10 @@
         android:layout_marginTop="16dp"
         android:text="Stamina"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_speed" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_speedPanda" />
 
     <SeekBar
-        android:id="@+id/seekBar_level"
+        android:id="@+id/seekBar_levelPanda"
         android:layout_width="323dp"
         android:layout_height="16dp"
         android:layout_marginEnd="8dp"
@@ -93,10 +93,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_value" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_valuePanda" />
 
     <TextView
-        android:id="@+id/textView_value"
+        android:id="@+id/textView_valuePanda"
         android:textColor="#000000"
         android:textStyle="bold"
         android:layout_width="wrap_content"
@@ -107,7 +107,7 @@
         android:text="1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_stamina" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_staminaPanda" />
 
     <ImageView
         android:id="@+id/imageView_monster"
@@ -115,8 +115,10 @@
         android:layout_height="150dp"
         android:layout_marginBottom="8dp"
         android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toTopOf="@+id/textView_value"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView_valuePanda"
         app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/retour_fire"
         app:srcCompat="@drawable/firelion" />
 
 </android.support.constraint.ConstraintLayout>

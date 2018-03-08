@@ -27,12 +27,12 @@ public class FireLion extends AppCompatActivity {
         setContentView(R.layout.activity_fire_lion);
 
         textViewTitle = findViewById(R.id.textView_Firelion);
-        textViewPower = findViewById(R.id.textView_power);
-        textViewLife = findViewById(R.id.textView_life);
-        textViewSpeed = findViewById(R.id.textView_speed);
-        textViewStamina = findViewById(R.id.textView_stamina);
-        seekBarLevel = findViewById(R.id.seekBar_level);
-        textViewValue = findViewById(R.id.textView_value);
+        textViewPower = findViewById(R.id.textView_powerPanda);
+        textViewLife = findViewById(R.id.textView_lifePanda);
+        textViewSpeed = findViewById(R.id.textView_speedPanda);
+        textViewStamina = findViewById(R.id.textView_staminaPanda);
+        seekBarLevel = findViewById(R.id.seekBar_levelPanda);
+        textViewValue = findViewById(R.id.textView_valuePanda);
         imageViewMonster = findViewById(R.id.imageView_monster);
 
         seekBarLevel.setMax(20);
@@ -74,11 +74,6 @@ public class FireLion extends AppCompatActivity {
 
             }
         });
-
-
-
-
-
 
         this.retourFire = findViewById(R.id.retour_fire);
 
