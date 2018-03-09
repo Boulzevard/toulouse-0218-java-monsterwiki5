@@ -26,12 +26,14 @@
 
     <ImageView
         android:id="@+id/imageViewtrucblanc"
-        android:layout_width="197dp"
+        android:layout_width="match_parent"
         android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         android:alpha="0.2"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
-        app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
-        app:layout_constraintStart_toStartOf="@+id/imageView_Speed"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView_Power"
         app:srcCompat="@android:drawable/screen_background_light" />
 
@@ -40,11 +42,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="8dp"
-        android:text="Fire Lion"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/crushed"
+        android:text="Level"
         android:textColor="#000000"
+        android:textSize="35dp"
         android:textStyle="bold"
-        android:textSize="25dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView_TitleFirelion" />
 
@@ -52,10 +55,11 @@
         android:id="@+id/textView_StatPower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/crushed"
         android:text="Power"
         android:textColor="#000000"
-        android:textSize="22dp"
+        android:textSize="27dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
         app:layout_constraintTop_toBottomOf="@+id/imageView_button3" />
@@ -68,7 +72,8 @@
         android:text="Life"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintEnd_toEndOf="@+id/textView_StatStamina"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatPower" />
 
@@ -80,7 +85,8 @@
         android:text="Speed"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatLife" />
 
@@ -93,7 +99,8 @@
         android:text="Stamina"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintStart_toEndOf="@+id/textView_Stamina"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatSpeed" />
 
@@ -120,6 +127,7 @@
         android:textColor="#000000"
         android:textStyle="bold"
         android:visibility="invisible"
+        android:fontFamily="@font/crushed"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_level"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -141,10 +149,11 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/crushed"
         android:text="Power :"
         android:textColor="#000000"
-        android:textSize="22dp"
+        android:textSize="27dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView_power"
         app:layout_constraintTop_toBottomOf="@+id/imageView_button3" />
@@ -157,7 +166,8 @@
         android:text="Life :"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintStart_toStartOf="@+id/textView_Power"
         app:layout_constraintTop_toBottomOf="@+id/textView_Power" />
 
@@ -169,7 +179,8 @@
         android:text="Speed :"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintStart_toStartOf="@+id/textView_Life"
         app:layout_constraintTop_toBottomOf="@+id/textView_Life" />
 
@@ -181,14 +192,15 @@
         android:text="Stamina :"
         android:textColor="#000000"
         android:textStyle="bold"
-        android:textSize="22dp"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
         app:layout_constraintStart_toStartOf="@+id/textView_Speed"
         app:layout_constraintTop_toBottomOf="@+id/textView_Speed" />
 
     <ImageView
         android:id="@+id/imageView_power"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Power"
         app:layout_constraintStart_toStartOf="parent"
@@ -197,8 +209,8 @@
 
     <ImageView
         android:id="@+id/imageView_life"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Life"
         app:layout_constraintEnd_toStartOf="@+id/textView_Life"
@@ -207,8 +219,8 @@
 
     <ImageView
         android:id="@+id/imageView_Speed"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Speed"
         app:layout_constraintEnd_toStartOf="@+id/textView_Speed"
@@ -216,8 +228,8 @@
 
     <ImageView
         android:id="@+id/imageView_Stamina"
-        android:layout_width="22dp"
-        android:layout_height="22dp"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
         app:layout_constraintEnd_toStartOf="@+id/textView_Stamina"
@@ -251,9 +263,8 @@
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="21dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toEndOf="@+id/imageView_button2"
         app:layout_constraintTop_toBottomOf="@+id/retour_fire"
         app:srcCompat="@drawable/mini_firelion3" />
@@ -263,7 +274,7 @@
         android:layout_width="50dp"
         android:layout_height="50dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_button1"
         app:srcCompat="@drawable/element_fire" />
@@ -284,12 +295,44 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
         android:layout_marginTop="16dp"
-        android:fontFamily="sans-serif"
+        android:fontFamily="@font/crushed"
         android:text="FIRE LION"
         android:textColor="#000000"
-        android:textSize="25dp"
+        android:textSize="45dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/crushed"
+        android:text="Element :"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_habitat"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_habitat"
+        app:layout_constraintTop_toTopOf="@+id/imageView_habitat" />
+
+    <TextView
+        android:id="@+id/textView_weakness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/crushed"
+        android:text="Weakness :"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_weakness"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_weakness"
+        app:layout_constraintTop_toTopOf="@+id/imageView_weakness" />
 
 </android.support.constraint.ConstraintLayout>

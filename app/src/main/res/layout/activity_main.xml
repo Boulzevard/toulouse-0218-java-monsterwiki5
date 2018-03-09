@@ -17,10 +17,8 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="369dp"
+        android:layout_width="match_parent"
         android:layout_height="149dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -29,21 +27,23 @@
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="130dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/wizard2" />
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="74dp"
+        android:layout_width="150dp"
         android:layout_height="29dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginTop="55dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="82dp"
         android:text="Yo maggle"
         android:textColor="#000000"
+        android:textSize="20dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/imageView4"
         app:layout_constraintTop_toTopOf="@+id/imageView4" />
@@ -60,7 +60,7 @@
     <ImageView
         android:id="@+id/rockilla"
         android:layout_width="104dp"
-        android:layout_height="85dp"
+        android:layout_height="100dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
         app:layout_constraintEnd_toStartOf="@+id/thunder_eagle"
@@ -80,22 +80,22 @@
 
     <ImageView
         android:id="@+id/turtle"
-        android:layout_width="104dp"
-        android:layout_height="85dp"
-        android:layout_marginStart="32dp"
+        android:layout_width="100dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="60dp"
         android:layout_marginTop="16dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/panda"
+        app:layout_constraintTop_toTopOf="@+id/fire_lion"
         app:srcCompat="@drawable/turtle_1" />
 
     <ImageView
         android:id="@+id/fire_lion"
         android:layout_width="104dp"
-        android:layout_height="85dp"
-        android:layout_marginEnd="32dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="70dp"
         android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/thunder_eagle"
+        app:layout_constraintTop_toBottomOf="@+id/panda"
         app:srcCompat="@drawable/firelion" />
 
 </android.support.constraint.ConstraintLayout>
