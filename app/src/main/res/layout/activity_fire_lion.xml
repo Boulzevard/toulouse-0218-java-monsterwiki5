@@ -8,8 +8,8 @@
 
     <ImageView
         android:id="@+id/imageView_background"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:alpha="0.8"
         android:background="@drawable/backgroundfire2"
         tools:layout_editor_absoluteX="0dp"
@@ -23,6 +23,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewtrucblanc"
+        android:layout_width="197dp"
+        android:layout_height="180dp"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
+        app:layout_constraintStart_toStartOf="@+id/imageView_Speed"
+        app:layout_constraintTop_toTopOf="@+id/textView_Power"
+        app:srcCompat="@android:drawable/screen_background_light" />
 
     <TextView
         android:id="@+id/textView_Firelion"
@@ -41,12 +52,13 @@
         android:id="@+id/textView_StatPower"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:text="Power"
         android:textColor="#000000"
+        android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
-        app:layout_constraintTop_toBottomOf="@+id/retour_fire" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_button3" />
 
     <TextView
         android:id="@+id/textView_StatLife"
@@ -56,18 +68,20 @@
         android:text="Life"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView_StatSpeed"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatStamina"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatPower" />
 
     <TextView
         android:id="@+id/textView_StatSpeed"
-        android:layout_width="41dp"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Speed"
         android:textColor="#000000"
         android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/textView_StatStamina"
+        android:textSize="22dp"
+        app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatLife" />
 
     <TextView
@@ -79,6 +93,7 @@
         android:text="Stamina"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:textSize="22dp"
         app:layout_constraintStart_toEndOf="@+id/textView_Stamina"
         app:layout_constraintTop_toBottomOf="@+id/textView_StatSpeed" />
 
@@ -104,6 +119,7 @@
         android:text="1"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:visibility="invisible"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_level"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -120,28 +136,18 @@
         app:layout_constraintStart_toStartOf="parent"
         app:srcCompat="@drawable/firelion" />
 
-    <ImageView
-        android:id="@+id/imageView16"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:alpha="0.2"
-        app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
-        app:layout_constraintEnd_toEndOf="@+id/textView_StatLife"
-        app:layout_constraintStart_toStartOf="@+id/imageView_Speed"
-        app:layout_constraintTop_toTopOf="@+id/textView_Power"
-        app:srcCompat="@android:drawable/screen_background_light" />
-
     <TextView
         android:id="@+id/textView_Power"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="60dp"
+        android:layout_marginTop="16dp"
         android:text="Power :"
         android:textColor="#000000"
+        android:textSize="22dp"
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/imageView_power"
-        app:layout_constraintTop_toBottomOf="@+id/retour_fire" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView_button3" />
 
     <TextView
         android:id="@+id/textView_Life"
@@ -151,6 +157,7 @@
         android:text="Life :"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:textSize="22dp"
         app:layout_constraintStart_toStartOf="@+id/textView_Power"
         app:layout_constraintTop_toBottomOf="@+id/textView_Power" />
 
@@ -162,6 +169,7 @@
         android:text="Speed :"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:textSize="22dp"
         app:layout_constraintStart_toStartOf="@+id/textView_Life"
         app:layout_constraintTop_toBottomOf="@+id/textView_Life" />
 
@@ -173,13 +181,14 @@
         android:text="Stamina :"
         android:textColor="#000000"
         android:textStyle="bold"
+        android:textSize="22dp"
         app:layout_constraintStart_toStartOf="@+id/textView_Speed"
         app:layout_constraintTop_toBottomOf="@+id/textView_Speed" />
 
     <ImageView
         android:id="@+id/imageView_power"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_marginStart="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Power"
         app:layout_constraintStart_toStartOf="parent"
@@ -188,8 +197,8 @@
 
     <ImageView
         android:id="@+id/imageView_life"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Life"
         app:layout_constraintEnd_toStartOf="@+id/textView_Life"
@@ -198,8 +207,8 @@
 
     <ImageView
         android:id="@+id/imageView_Speed"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Speed"
         app:layout_constraintEnd_toStartOf="@+id/textView_Speed"
@@ -207,8 +216,8 @@
 
     <ImageView
         android:id="@+id/imageView_Stamina"
-        android:layout_width="19dp"
-        android:layout_height="19dp"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
         app:layout_constraintEnd_toStartOf="@+id/textView_Stamina"
@@ -242,6 +251,7 @@
         android:layout_height="50dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.692"
         app:layout_constraintStart_toEndOf="@+id/imageView_button2"
@@ -250,21 +260,22 @@
 
     <ImageView
         android:id="@+id/imageView_habitat"
-        android:layout_width="35dp"
-        android:layout_height="31dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        app:layout_constraintEnd_toStartOf="@+id/imageView_weakness"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_button1"
         app:srcCompat="@drawable/element_fire" />
 
     <ImageView
         android:id="@+id/imageView_weakness"
-        android:layout_width="28dp"
-        android:layout_height="29dp"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
         android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView_habitat"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_habitat"
         app:srcCompat="@drawable/element_water" />
 
     <TextView
@@ -272,11 +283,12 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="50dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif"
         android:text="FIRE LION"
         android:textColor="#000000"
-        android:textStyle="bold"
         android:textSize="25dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
