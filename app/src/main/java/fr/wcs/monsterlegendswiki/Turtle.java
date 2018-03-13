@@ -1,6 +1,8 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.content.Intent;
+import android.os.Build;
+import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +22,7 @@ public class Turtle extends AppCompatActivity {
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
