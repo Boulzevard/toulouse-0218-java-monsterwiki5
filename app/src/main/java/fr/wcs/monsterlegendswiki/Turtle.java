@@ -1,8 +1,6 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.content.Intent;
-import android.os.Build;
-import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -22,19 +20,18 @@ public class Turtle extends AppCompatActivity {
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
 
-    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_turtle);
 
         textViewTitle = findViewById(R.id.textView_Turtle);
-        textViewPower = findViewById(R.id.textView_powerPanda);
-        textViewLife = findViewById(R.id.textView_lifePanda);
-        textViewSpeed = findViewById(R.id.textView_speedPanda);
-        textViewStamina = findViewById(R.id.textView_staminaPanda);
+        textViewPower = findViewById(R.id.textView_powerTurtle);
+        textViewLife = findViewById(R.id.textView_lifeTurtle);
+        textViewSpeed = findViewById(R.id.textView_speedTurtle);
+        textViewStamina = findViewById(R.id.textView_staminaTurtle);
         seekBarLevel = findViewById(R.id.seekBar_levelTurtle);
-        textViewValue = findViewById(R.id.textView_valuePanda);
+        textViewValue = findViewById(R.id.textView_valueTurtle);
         imageViewMonster = findViewById(R.id.imageView_monsterTurtle);
 
         seekBarLevel.setMax(20);

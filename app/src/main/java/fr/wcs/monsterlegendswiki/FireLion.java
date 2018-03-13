@@ -68,7 +68,6 @@ public class FireLion extends AppCompatActivity {
             }
         });
 
-
         seekBarLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
             public void onProgressChanged(SeekBar seekBar, int i, boolean b) {
@@ -90,9 +89,6 @@ public class FireLion extends AppCompatActivity {
                 else {
                     imageViewMonster.setImageResource(R.drawable.ui_fire_lion_3);
                 }
-
-
-
             }
 
             @Override
@@ -106,11 +102,6 @@ public class FireLion extends AppCompatActivity {
             }
         });
 
-
-
-
-
-
         this.retourFire = findViewById(R.id.retour_fire);
 
         retourFire.setOnClickListener(new View.OnClickListener() {
@@ -121,10 +112,8 @@ public class FireLion extends AppCompatActivity {
                 finish();
             }
         });
-
-
-
     }
+
     public void fillTextView(MyMonster firelion){
         textViewTitle.setText("level : " + firelion.getmLevel());
         textViewLife.setText("" + firelion.getmLife());
