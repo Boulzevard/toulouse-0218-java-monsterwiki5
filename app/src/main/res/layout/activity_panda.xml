@@ -7,64 +7,114 @@
     tools:context="fr.wcs.monsterlegendswiki.Panda">
 
     <ImageView
+        android:id="@+id/imageView_backgroundNature"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:alpha="0.8"
+        android:background="@drawable/backgroundnature"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <ImageView
         android:id="@+id/retour_panda"
-        android:layout_width="131dp"
-        android:layout_height="69dp"
+        android:layout_width="160dp"
+        android:layout_height="100dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/logo" />
+
+    <ImageView
+        android:id="@+id/imageViewtrucblanc"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:alpha="0.2"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_Power"
+        app:srcCompat="@android:drawable/screen_background_light" />
 
     <TextView
         android:id="@+id/textView_Panda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="24dp"
-        android:layout_marginTop="16dp"
-        android:text="TextView"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="4dp"
+        android:fontFamily="@font/crushed"
+        android:text="Level"
+        android:textColor="#000000"
+        android:textSize="35dp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/textView_TitlePanda" />
 
     <TextView
         android:id="@+id/textView_powerPanda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="27dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_Panda" />
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/crushed"
+        android:text="Power"
+        android:textColor="#000000"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/textView_lifePanda"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_buttonPanda3" />
 
     <TextView
         android:id="@+id/textView_lifePanda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Life"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintEnd_toEndOf="@+id/textView_staminaPanda"
         app:layout_constraintTop_toBottomOf="@+id/textView_powerPanda" />
 
     <TextView
         android:id="@+id/textView_speedPanda"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:text="Speed"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintEnd_toEndOf="@+id/textView_lifePanda"
         app:layout_constraintTop_toBottomOf="@+id/textView_lifePanda" />
 
     <TextView
         android:id="@+id/textView_staminaPanda"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="8dp"
-        android:layout_marginTop="8dp"
-        android:text="TextView"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Stamina"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintStart_toEndOf="@+id/textView_Stamina"
         app:layout_constraintTop_toBottomOf="@+id/textView_speedPanda" />
+
+    <SeekBar
+        android:id="@+id/seekBar_levelPanda"
+        android:layout_width="323dp"
+        android:layout_height="16dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_backgroundNature"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.511"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textView_valuePanda"
@@ -73,30 +123,216 @@
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
-        android:layout_marginTop="196dp"
         android:text="1"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:visibility="invisible"
+        android:fontFamily="@font/crushed"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_levelPanda"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView_staminaPanda" />
-
-    <SeekBar
-        android:id="@+id/seekBar_levelPanda"
-        android:layout_width="352dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="160dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:layout_editor_absoluteX="16dp" />
+        app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView_monsterPanda"
-        android:layout_width="143dp"
-        android:layout_height="140dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginTop="8dp"
+        android:layout_width="196dp"
+        android:layout_height="300dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
         app:layout_constraintBottom_toTopOf="@+id/seekBar_levelPanda"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/panda_1" />
+
+    <TextView
+        android:id="@+id/textView_Power"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/crushed"
+        android:text="Power :"
+        android:textColor="#000000"
+        android:textSize="27dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/imageView_power"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_buttonPanda3" />
+
+    <TextView
+        android:id="@+id/textView_Life"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Life :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintStart_toStartOf="@+id/textView_Power"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Power" />
+
+    <TextView
+        android:id="@+id/textView_Speed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Speed :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintStart_toStartOf="@+id/textView_Life"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Life" />
+
+    <TextView
+        android:id="@+id/textView_Stamina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Stamina :"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="27dp"
+        android:fontFamily="@font/crushed"
+        app:layout_constraintStart_toStartOf="@+id/textView_Speed"
+        app:layout_constraintTop_toBottomOf="@+id/textView_Speed" />
+
+    <ImageView
+        android:id="@+id/imageView_power"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Power"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView_Power"
+        app:srcCompat="@drawable/stat_power" />
+
+    <ImageView
+        android:id="@+id/imageView_life"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Life"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Life"
+        app:layout_constraintTop_toTopOf="@+id/textView_Life"
+        app:srcCompat="@drawable/stat_life" />
+
+    <ImageView
+        android:id="@+id/imageView_Speed"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Speed"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Speed"
+        app:srcCompat="@drawable/stat_speed" />
+
+    <ImageView
+        android:id="@+id/imageView_Stamina"
+        android:layout_width="27dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textView_Stamina"
+        app:layout_constraintEnd_toStartOf="@+id/textView_Stamina"
+        app:srcCompat="@drawable/stat_stamina" />
+
+    <ImageView
+        android:id="@+id/imageView_buttonPanda1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_buttonPanda2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_buttonPanda2"
+        app:srcCompat="@drawable/mini_panda_1" />
+
+    <ImageView
+        android:id="@+id/imageView_buttonPanda2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageView_buttonPanda3"
+        app:srcCompat="@drawable/mini_panda_2" />
+
+    <ImageView
+        android:id="@+id/imageView_buttonPanda3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="21dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imageView_buttonPanda2"
         app:layout_constraintTop_toBottomOf="@+id/retour_panda"
-        app:layout_constraintVertical_bias="0.089"
-        app:srcCompat="@drawable/panda_1"
-        tools:layout_editor_absoluteX="8dp" />
+        app:srcCompat="@drawable/mini_panda_3" />
+
+    <ImageView
+        android:id="@+id/imageView_habitat"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="45dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_buttonPanda1"
+        app:srcCompat="@drawable/element_fire" />
+
+    <ImageView
+        android:id="@+id/imageView_weakness"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="32dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView_habitat"
+        app:srcCompat="@drawable/element_water" />
+
+    <TextView
+        android:id="@+id/textView_TitlePanda"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/crushed"
+        android:text="PANDA"
+        android:textColor="#000000"
+        android:textSize="45dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView_element"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/crushed"
+        android:text="Element :"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_habitat"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_habitat"
+        app:layout_constraintTop_toTopOf="@+id/imageView_habitat" />
+
+    <TextView
+        android:id="@+id/textView_weakness"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/crushed"
+        android:text="Weakness :"
+        android:textColor="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView_weakness"
+        app:layout_constraintEnd_toStartOf="@+id/imageView_weakness"
+        app:layout_constraintTop_toTopOf="@+id/imageView_weakness" />
+
 </android.support.constraint.ConstraintLayout>
