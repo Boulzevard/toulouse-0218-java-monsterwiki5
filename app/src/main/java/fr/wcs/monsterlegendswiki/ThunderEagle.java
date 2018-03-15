@@ -1,6 +1,8 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.content.Intent;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +44,7 @@ public class ThunderEagle extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterThunderEagle = new MyMonster(0, 242, 81, 192, 100);
+        final MyMonster monsterThunderEagle = new MyMonster(0, 220, 70, 175, 100);
 
         fillTextView(monsterThunderEagle);
 
@@ -76,15 +78,27 @@ public class ThunderEagle extends AppCompatActivity {
                 monsterThunderEagle.evolution(level);
                 fillTextView(monsterThunderEagle);
                 if (level == 0 ){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_thundereagle_0);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.thunder_eagle_huevo);
                 }
                 else if (level < 4){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_thundereagle_1);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.thundereagle_1);
                 }
                 else if (level < 7){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_thundereagle_2);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.thundereagle_2);
                 }
                 else {
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_thundereagle_3);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.thundereagle_3);
                 }
 

@@ -47,7 +47,7 @@ public class FireLion extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterFirelion = new MyMonster(0, 242, 81, 192, 100);
+        final MyMonster monsterFirelion = new MyMonster(0, 220, 70, 175, 100);
 
         fillTextView(monsterFirelion);
 
