@@ -122,6 +122,7 @@ public class Panda extends AppCompatActivity {
             public void onClick(View view) {
                 Intent retour2 = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(retour2);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
 
             }

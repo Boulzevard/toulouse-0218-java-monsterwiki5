@@ -123,6 +123,7 @@ public class Turtle extends AppCompatActivity {
             public void onClick(View view) {
                 Intent retour3 = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(retour3);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });

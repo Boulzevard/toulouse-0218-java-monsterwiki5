@@ -122,6 +122,7 @@ public class Rockilla extends AppCompatActivity {
             public void onClick(View view) {
                 Intent retour4 = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(retour4);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });

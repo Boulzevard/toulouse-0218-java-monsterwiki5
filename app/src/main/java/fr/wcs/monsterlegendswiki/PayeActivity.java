@@ -51,6 +51,7 @@ public class PayeActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent retour1 = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(retour1);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });

@@ -121,6 +121,7 @@ public class ThunderEagle extends AppCompatActivity {
             public void onClick(View view) {
                 Intent retour5 = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(retour5);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });

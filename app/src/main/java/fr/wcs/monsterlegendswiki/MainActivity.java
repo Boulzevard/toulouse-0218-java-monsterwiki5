@@ -27,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mooveFire = new Intent(getApplicationContext(),FireLion.class);
                 startActivity(mooveFire);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mooveTurtle = new Intent(getApplicationContext(),Turtle.class);
                 startActivity(mooveTurtle);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
@@ -49,6 +51,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mooveRockilla = new Intent(getApplicationContext(),Rockilla.class);
                 startActivity(mooveRockilla);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
@@ -60,6 +63,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mooveThunderEagle = new Intent(getApplicationContext(),ThunderEagle.class);
                 startActivity(mooveThunderEagle);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
@@ -71,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent moovePanda = new Intent(getApplicationContext(),Panda.class);
                 startActivity(moovePanda);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
@@ -82,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent mooveShop = new Intent(getApplicationContext(), PayeActivity.class);
                 startActivity(mooveShop);
+                overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
                 finish();
             }
         });
