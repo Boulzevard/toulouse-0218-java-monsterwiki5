@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Monster Legends Wiki</string>
+    <string name="montant_1_000_000_000">Montant: $ 1 000 000 000</string>
+    <string name="achat_version_compl_te">Achat version complète</string>
+    <string name="code">***</string>
+    <string name="mm_yyyy">MM/yyyy</string>
+    <string name="xxxx_xxxx_xxxx_xxxx">xxxx/xxxx/xxxx/xxxx</string>
+    <string name="e_mail">e-mail</string>
 </resources>

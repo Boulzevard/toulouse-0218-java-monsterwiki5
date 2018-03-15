@@ -6,7 +6,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -33,7 +32,7 @@ public class PayeActivity extends AppCompatActivity {
         valide.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(PayeActivity.this, "Carte Non Valide", Toast.LENGTH_LONG).show();
+                Toast.makeText(PayeActivity.this, "Paiement refusé", Toast.LENGTH_LONG).show();
             }
         });
 
