@@ -19,6 +19,9 @@ public class ThunderEagle extends AppCompatActivity {
     TextView textViewValue;
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
+    ImageView imagebuttonThunderEagle1;
+    ImageView imagebuttonThunderEagle2;
+    ImageView imagebuttonThunderEagle3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +36,36 @@ public class ThunderEagle extends AppCompatActivity {
         seekBarLevel = findViewById(R.id.seekBar_levelThunderEagle);
         textViewValue = findViewById(R.id.textView_valueThunderEagle);
         imageViewMonster = findViewById(R.id.imageView_monsterThunderEagle);
+        imagebuttonThunderEagle1 = findViewById(R.id.imageView_buttonThunderEagle1);
+        imagebuttonThunderEagle2 = findViewById(R.id.imageView_buttonThunderEagle2);
+        imagebuttonThunderEagle3 = findViewById(R.id.imageView_buttonThunderEagle3);
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterThunderEagle = new MyMonster(1, 242, 81, 192, 100);
+        final MyMonster monsterThunderEagle = new MyMonster(0, 242, 81, 192, 100);
 
         fillTextView(monsterThunderEagle);
+
+        imagebuttonThunderEagle1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(1);
+            }
+        });
+
+        imagebuttonThunderEagle2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(4);
+            }
+        });
+
+        imagebuttonThunderEagle3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(7);
+            }
+        });
 
         seekBarLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -86,10 +113,10 @@ public class ThunderEagle extends AppCompatActivity {
     }
 
     public void fillTextView(MyMonster firelion){
-        textViewTitle.setText("Thunder Eagle level : " + firelion.getmLevel());
-        textViewLife.setText("Life : " + firelion.getmLife());
-        textViewSpeed.setText("Speed : " + firelion.getmSpeed());
-        textViewStamina.setText("Stamina : " + firelion.getmStamina());
-        textViewPower.setText("Power : "   + firelion.getmPower());
+        textViewTitle.setText("level : " + firelion.getmLevel());
+        textViewLife.setText("" + firelion.getmLife());
+        textViewSpeed.setText("" + firelion.getmSpeed());
+        textViewStamina.setText("" + firelion.getmStamina());
+        textViewPower.setText(""   + firelion.getmPower());
     }
 }

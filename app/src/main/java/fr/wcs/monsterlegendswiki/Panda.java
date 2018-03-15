@@ -19,6 +19,9 @@ public class Panda extends AppCompatActivity {
     TextView textViewValue;
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
+    ImageView imagebuttonPanda1;
+    ImageView imagebuttonPanda2;
+    ImageView imagebuttonPanda3;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,12 +36,36 @@ public class Panda extends AppCompatActivity {
         seekBarLevel = findViewById(R.id.seekBar_levelPanda);
         textViewValue = findViewById(R.id.textView_valuePanda);
         imageViewMonster = findViewById(R.id.imageView_monsterPanda);
+        imagebuttonPanda1 =findViewById(R.id.imageView_buttonPanda1);
+        imagebuttonPanda2 =findViewById(R.id.imageView_buttonPanda2);
+        imagebuttonPanda3 =findViewById(R.id.imageView_buttonPanda3);
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterPanda = new MyMonster(1, 242, 81, 192, 100);
+        final MyMonster monsterPanda = new MyMonster(0, 242, 81, 192, 100);
 
         fillTextView(monsterPanda);
+
+        imagebuttonPanda1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(1);
+            }
+        });
+
+        imagebuttonPanda2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(4);
+            }
+        });
+
+        imagebuttonPanda3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                seekBarLevel.setProgress(7);
+            }
+        });
 
         seekBarLevel.setOnSeekBarChangeListener(new SeekBar.OnSeekBarChangeListener() {
             @Override
@@ -88,10 +115,10 @@ public class Panda extends AppCompatActivity {
     }
 
     public void fillTextView(MyMonster firelion){
-        textViewTitle.setText("Panda level : " + firelion.getmLevel());
-        textViewLife.setText("Life : " + firelion.getmLife());
-        textViewSpeed.setText("Speed : " + firelion.getmSpeed());
-        textViewStamina.setText("Stamina : " + firelion.getmStamina());
-        textViewPower.setText("Power : "   + firelion.getmPower());
+        textViewTitle.setText("level : " + firelion.getmLevel());
+        textViewLife.setText("" + firelion.getmLife());
+        textViewSpeed.setText("" + firelion.getmSpeed());
+        textViewStamina.setText("" + firelion.getmStamina());
+        textViewPower.setText(""   + firelion.getmPower());
     }
 }
