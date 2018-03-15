@@ -42,7 +42,7 @@ public class Rockilla extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterRockilla = new MyMonster(1, 242, 81, 192, 100);
+        final MyMonster monsterRockilla = new MyMonster(0, 242, 81, 192, 100);
 
         fillTextView(monsterRockilla);
 

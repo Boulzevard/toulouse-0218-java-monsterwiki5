@@ -142,7 +142,7 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBar_levelRockilla"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/rockilla_1" />
+        app:srcCompat="@drawable/eggrockilla" />
 
     <TextView
         android:id="@+id/textView_Power"

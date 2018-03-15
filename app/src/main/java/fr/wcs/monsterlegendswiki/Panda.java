@@ -42,7 +42,7 @@ public class Panda extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterPanda = new MyMonster(1, 242, 81, 192, 100);
+        final MyMonster monsterPanda = new MyMonster(0, 242, 81, 192, 100);
 
         fillTextView(monsterPanda);
 

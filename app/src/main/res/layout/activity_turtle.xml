@@ -142,7 +142,7 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBar_levelTurtle"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/turtle_1" />
+        app:srcCompat="@drawable/eggturtle" />
 
     <TextView
         android:id="@+id/textView_Power"
