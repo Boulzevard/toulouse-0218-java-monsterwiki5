@@ -1,6 +1,8 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.content.Intent;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +44,7 @@ public class Panda extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterPanda = new MyMonster(0, 242, 81, 192, 100);
+        final MyMonster monsterPanda = new MyMonster(0, 220, 70, 175, 100);
 
         fillTextView(monsterPanda);
 
@@ -77,15 +79,27 @@ public class Panda extends AppCompatActivity {
                 fillTextView(monsterPanda);
                 if (level == 0 ){
                     imageViewMonster.setImageResource(R.drawable.treezard_huevo);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_panda_0);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                 }
                 else if (level < 4){
                     imageViewMonster.setImageResource(R.drawable.panda_1);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_panda_1);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                 }
                 else if (level < 7){
                     imageViewMonster.setImageResource(R.drawable.panda_2);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_panda_2);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                 }
                 else {
                     imageViewMonster.setImageResource(R.drawable.panda_3);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_panda_3);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                 }
 
             }

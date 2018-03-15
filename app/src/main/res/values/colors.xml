@@ -8,4 +8,13 @@
     <color name="colorDekraOrange">#ffa200</color>
     <color name="colorlionstart">#ffd503</color>
     <color name="colorlionend">#E5492A</color>
+    <color name="colorpanda1">#00ce0a</color>
+    <color name="colorpanda2">#058000</color>
+    <color name="colorrockilla1">#ffc000</color>
+    <color name="colorrockilla2">#805a00</color>
+    <color name="colorthunder1">#fffb00</color>
+    <color name="colorthunder2">#0090a6</color>
+    <color name="colortortue1">#00aab3</color>
+    <color name="colortortue2">#005380</color>
+
 </resources>

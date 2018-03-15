@@ -1,13 +1,9 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
 import android.graphics.Rect;
 import android.graphics.drawable.Drawable;
-import android.graphics.drawable.ShapeDrawable;
-import android.graphics.drawable.shapes.RectShape;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -51,7 +47,7 @@ public class FireLion extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterFirelion = new MyMonster(0, 242, 81, 192, 100);
+        final MyMonster monsterFirelion = new MyMonster(0, 220, 70, 175, 100);
 
         fillTextView(monsterFirelion);
 

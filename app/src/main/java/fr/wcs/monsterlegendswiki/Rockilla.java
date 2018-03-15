@@ -1,6 +1,8 @@
 package fr.wcs.monsterlegendswiki;
 
 import android.content.Intent;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -42,7 +44,7 @@ public class Rockilla extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterRockilla = new MyMonster(0, 242, 81, 192, 100);
+        final MyMonster monsterRockilla = new MyMonster(0, 220, 70, 175, 100);
 
         fillTextView(monsterRockilla);
 
@@ -76,15 +78,27 @@ public class Rockilla extends AppCompatActivity {
                 monsterRockilla.evolution(level);
                 fillTextView(monsterRockilla);
                 if (level == 0 ){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_rockilla_0);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.rockilla_egg);
                 }
                 else if (level < 4){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_rockilla_1);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.rockilla_1);
                 }
                 else if (level < 7){
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_rockilla_2);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.rockilla_2);
                 }
                 else {
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_rockilla_3);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                     imageViewMonster.setImageResource(R.drawable.rockilla_3);
                 }
 
