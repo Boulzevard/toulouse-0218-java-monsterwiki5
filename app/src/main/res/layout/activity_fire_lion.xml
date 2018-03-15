@@ -107,13 +107,16 @@
     <SeekBar
         android:id="@+id/seekBar_level"
         android:layout_width="323dp"
-        android:layout_height="16dp"
+        android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
+        android:progressDrawable="@drawable/scrubber_control"
+        android:thumb="@drawable/icon_firelion0"
+        android:background="@null"
+        android:splitTrack="false"
         app:layout_constraintBottom_toBottomOf="@+id/imageView_background"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.511"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -142,7 +145,7 @@
         app:layout_constraintBottom_toTopOf="@+id/seekBar_level"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/firelion" />
+        app:srcCompat="@drawable/eggfirelion" />
 
     <TextView
         android:id="@+id/textView_Power"

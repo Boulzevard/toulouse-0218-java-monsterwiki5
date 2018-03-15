@@ -1,6 +1,13 @@
 package fr.wcs.monsterlegendswiki;
 
+import android.annotation.SuppressLint;
+import android.content.Context;
 import android.content.Intent;
+import android.graphics.Rect;
+import android.graphics.drawable.Drawable;
+import android.graphics.drawable.ShapeDrawable;
+import android.graphics.drawable.shapes.RectShape;
+import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -24,6 +31,7 @@ public class FireLion extends AppCompatActivity {
     ImageView imagebutton2;
     ImageView imagebutton3;
 
+    @SuppressLint("ResourceType")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -43,7 +51,7 @@ public class FireLion extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterFirelion = new MyMonster(1, 242, 81, 192, 100);
+        final MyMonster monsterFirelion = new MyMonster(0, 242, 81, 192, 100);
 
         fillTextView(monsterFirelion);
 
@@ -79,15 +87,30 @@ public class FireLion extends AppCompatActivity {
                 fillTextView(monsterFirelion);
                 if (level == 0 ){
                     imageViewMonster.setImageResource(R.drawable.eggfirelion);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_firelion0);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
                 }
                 else if (level < 4){
                     imageViewMonster.setImageResource(R.drawable.firelion);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_firelion1);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
+
                 }
                 else if (level < 7){
                     imageViewMonster.setImageResource(R.drawable.ui_fire_lion_2);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_firelion2);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
+
                 }
                 else {
                     imageViewMonster.setImageResource(R.drawable.ui_fire_lion_3);
+                    Drawable myThumb = getResources().getDrawable(R.drawable.icon_firelion3);
+                    myThumb.setBounds( new Rect( 0, 0 ,myThumb.getIntrinsicWidth(),myThumb.getIntrinsicHeight()));
+                    seekBarLevel.setThumb(myThumb);
+
                 }
             }
 

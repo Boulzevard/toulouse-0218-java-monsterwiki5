@@ -2,5 +2,10 @@
 <resources>
     <color name="colorPrimary">#000000</color>
     <color name="colorPrimaryDark">#000000</color>
-    <color name="colorAccent">#FF4081</color>
+    <color name="colorAccent">#000000</color>
+    <color name="background_material_light">#000000</color>
+    <color name="colorDekraYellow">#fffb00</color>
+    <color name="colorDekraOrange">#ffa200</color>
+    <color name="colorlionstart">#ffd503</color>
+    <color name="colorlionend">#E5492A</color>
 </resources>
