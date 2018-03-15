@@ -13,6 +13,7 @@ public class MainActivity extends AppCompatActivity {
     private ImageView playRockilla;
     private ImageView playThunderEagle;
     private ImageView playPanda;
+    private ImageView playshop;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -70,6 +71,17 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Intent moovePanda = new Intent(getApplicationContext(),Panda.class);
                 startActivity(moovePanda);
+                finish();
+            }
+        });
+
+        this.playshop = findViewById(R.id.imageView_shop);
+
+        playshop.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent mooveShop = new Intent(getApplicationContext(), PayeActivity.class);
+                startActivity(mooveShop);
                 finish();
             }
         });
