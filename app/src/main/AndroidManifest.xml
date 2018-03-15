@@ -21,11 +21,13 @@
         <activity android:name=".ThunderEagle" />
         <activity android:name=".Turtle" />
         <activity android:name=".Rockilla" />
-        <activity android:name=".FireLion"></activity>
+        <activity android:name=".FireLion" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
+
+        <activity android:name=".PayeActivity"></activity>
     </application>
 
 </manifest>
