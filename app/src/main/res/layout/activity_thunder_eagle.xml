@@ -281,7 +281,7 @@
         android:layout_marginTop="45dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_buttonThunderEagle1"
-        app:srcCompat="@drawable/element_fire" />
+        app:srcCompat="@drawable/element_thunder" />
 
     <ImageView
         android:id="@+id/imageView_weakness"
@@ -291,7 +291,7 @@
         android:layout_marginTop="32dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView_habitat"
-        app:srcCompat="@drawable/element_water" />
+        app:srcCompat="@drawable/element_earth" />
 
     <TextView
         android:id="@+id/textView_TitleThunderEagle"
