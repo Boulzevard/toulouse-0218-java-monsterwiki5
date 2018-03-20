@@ -10,8 +10,9 @@ import android.widget.ImageView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-public class ThunderEagle extends AppCompatActivity {
+public class ThunderEagleActivity extends AppCompatActivity {
 
+    // TODO : faire les même corrections que FireLionActivity
     private ImageView retourThunderEagle;
     TextView textViewTitle;
     TextView textViewPower;
@@ -44,7 +45,7 @@ public class ThunderEagle extends AppCompatActivity {
 
         seekBarLevel.setMax(20);
 
-        final MyMonster monsterThunderEagle = new MyMonster(0, 220, 70, 175, 100);
+        final MonsterModel monsterThunderEagle = new MonsterModel(0, 220, 70, 175, 100);
 
         fillTextView(monsterThunderEagle);
 
@@ -127,11 +128,11 @@ public class ThunderEagle extends AppCompatActivity {
         });
     }
 
-    public void fillTextView(MyMonster firelion){
-        textViewTitle.setText("level : " + firelion.getmLevel());
-        textViewLife.setText("" + firelion.getmLife());
-        textViewSpeed.setText("" + firelion.getmSpeed());
-        textViewStamina.setText("" + firelion.getmStamina());
-        textViewPower.setText(""   + firelion.getmPower());
+    public void fillTextView(MonsterModel firelion){
+        textViewTitle.setText("level : " + firelion.getLevel());
+        textViewLife.setText("" + firelion.getLife());
+        textViewSpeed.setText("" + firelion.getSpeed());
+        textViewStamina.setText("" + firelion.getStamina());
+        textViewPower.setText(""   + firelion.getPower());
     }
 }

@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="fr.wcs.monsterlegendswiki.PayeActivity">
+    tools:context="fr.wcs.monsterlegendswiki.StoreActivity">
 
     <ImageView
-        android:id="@+id/imageView_stripe"
+        android:id="@+id/iv_stripe"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/image_stripe_widget" />
 
     <EditText
-        android:id="@+id/editText_email"
+        android:id="@+id/edit_email"
         android:layout_width="172dp"
         android:layout_height="40dp"
         android:layout_marginEnd="8dp"
@@ -35,26 +35,26 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.514"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView_stripe" />
+        app:layout_constraintTop_toTopOf="@+id/iv_stripe" />
 
     <EditText
-        android:id="@+id/editText_card"
+        android:id="@+id/edit_card"
         android:layout_width="175dp"
         android:layout_height="46dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="17dp"
         android:layout_marginTop="12dp"
+        android:background="@android:color/transparent"
         android:ems="10"
         android:hint="@string/xxxx_xxxx_xxxx_xxxx"
-        android:textSize="12dp"
         android:inputType="numberPassword"
-        android:background="@android:color/transparent"
+        android:textSize="12dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edit_email" />
 
     <EditText
-        android:id="@+id/editText_date"
+        android:id="@+id/edit_date"
         android:layout_width="71dp"
         android:layout_height="37dp"
         android:layout_marginBottom="114dp"
@@ -64,11 +64,11 @@
         android:hint="@string/mm_yyyy"
         android:inputType="date"
         android:textSize="12dp"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView_stripe"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_stripe"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editText_crypto"
+        android:id="@+id/edit_crypto"
         android:layout_width="74dp"
         android:layout_height="39dp"
         android:layout_marginBottom="315dp"
@@ -80,12 +80,12 @@
         android:inputType="numberPassword"
         android:textSize="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imageView_stripe"
+        app:layout_constraintEnd_toEndOf="@+id/iv_stripe"
         app:layout_constraintHorizontal_bias="0.361"
-        app:layout_constraintStart_toEndOf="@+id/editText_date" />
+        app:layout_constraintStart_toEndOf="@+id/edit_date" />
 
     <TextView
-        android:id="@+id/textView_achat"
+        android:id="@+id/tv_buy"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -95,10 +95,10 @@
         android:textColor="#000000"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/imageView_stripe" />
+        app:layout_constraintTop_toTopOf="@+id/iv_stripe" />
 
     <TextView
-        android:id="@+id/textView_prix"
+        android:id="@+id/tv_price"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="70dp"
@@ -106,12 +106,12 @@
         android:layout_marginStart="8dp"
         android:text="@string/montant_1_000_000_000"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toBottomOf="@+id/imageView_stripe"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_stripe"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView_retour"
+        android:id="@+id/iv_back"
         android:layout_width="160dp"
         android:layout_height="100dp"
         app:layout_constraintStart_toStartOf="parent"
@@ -129,7 +129,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
-
-
 
 </android.support.constraint.ConstraintLayout>

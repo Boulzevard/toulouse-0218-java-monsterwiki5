@@ -9,25 +9,24 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Splash_Activity">
+        <activity android:name=".SplashActivity"
+            android:noHistory="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity" />
-        <activity android:name=".Panda" />
-        <activity android:name=".ThunderEagle" />
-        <activity android:name=".Turtle" />
-        <activity android:name=".Rockilla" />
-        <activity android:name=".FireLion" />
+        <activity android:name=".PandaActivity" />
+        <activity android:name=".ThunderEagleActivity" />
+        <activity android:name=".TurtleActivity" />
+        <activity android:name=".RockillaActivity" />
+        <activity android:name=".FireLionActivity" />
+        <activity android:name=".StoreActivity" />
 
         <meta-data
             android:name="preloaded_fonts"
             android:resource="@array/preloaded_fonts" />
-
-        <activity android:name=".PayeActivity"></activity>
     </application>
 
 </manifest>

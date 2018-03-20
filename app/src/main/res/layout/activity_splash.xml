@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#000000"
-    tools:context="fr.wcs.monsterlegendswiki.Splash_Activity">
+    tools:context="fr.wcs.monsterlegendswiki.SplashActivity">
 
     <ImageView
         android:id="@+id/imageView"

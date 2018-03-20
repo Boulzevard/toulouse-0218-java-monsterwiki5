@@ -6,4 +6,15 @@
     <string name="mm_yyyy">MM/yyyy</string>
     <string name="xxxx_xxxx_xxxx_xxxx">xxxx/xxxx/xxxx/xxxx</string>
     <string name="e_mail">e-mail</string>
+    <string name="payment_error">Paiement refusé</string>
+    <string name="level_info">level : %d</string>
+    <string name="select_monster">Sélectionnez votre monstre !</string>
+    <string name="power">Power :</string>
+    <string name="life">Life :</string>
+    <string name="speed">Speed :</string>
+    <string name="stamina">Stamina :</string>
+    <string name="fire_lion">FIRE LION</string>
+    <string name="element">Element :</string>
+    <string name="weakness">Weakness :</string>
+    <string name="level">Level</string>
 </resources>
