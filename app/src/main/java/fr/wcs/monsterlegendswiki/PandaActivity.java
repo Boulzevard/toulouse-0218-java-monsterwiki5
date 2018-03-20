@@ -15,11 +15,6 @@ public class PandaActivity extends AppCompatActivity {
     // TODO : faire les même corrections que FireLionActivity
     private ImageView retourPanda;
     TextView textViewTitle;
-    TextView textViewPower;
-    TextView textViewLife;
-    TextView textViewSpeed;
-    TextView textViewStamina;
-    TextView textViewValue;
     SeekBar seekBarLevel;
     ImageView imageViewMonster;
     ImageView imagebuttonPanda1;
@@ -32,12 +27,8 @@ public class PandaActivity extends AppCompatActivity {
         setContentView(R.layout.activity_panda);
 
         textViewTitle = findViewById(R.id.textView_Panda);
-        textViewPower = findViewById(R.id.textView_powerPanda);
-        textViewLife = findViewById(R.id.textView_lifePanda);
-        textViewSpeed = findViewById(R.id.textView_speedPanda);
-        textViewStamina = findViewById(R.id.textView_staminaPanda);
         seekBarLevel = findViewById(R.id.seekBar_levelPanda);
-        textViewValue = findViewById(R.id.textView_valuePanda);
+        final TextView textViewValue = findViewById(R.id.textView_valuePanda);
         imageViewMonster = findViewById(R.id.imageView_monsterPanda);
         imagebuttonPanda1 =findViewById(R.id.imageView_buttonPanda1);
         imagebuttonPanda2 =findViewById(R.id.imageView_buttonPanda2);
@@ -131,6 +122,10 @@ public class PandaActivity extends AppCompatActivity {
     }
 
     public void fillTextView(MonsterModel firelion){
+        TextView textViewPower = findViewById(R.id.textView_powerPanda);
+        TextView textViewLife = findViewById(R.id.textView_lifePanda);
+        TextView textViewSpeed = findViewById(R.id.textView_speedPanda);
+        TextView textViewStamina = findViewById(R.id.textView_staminaPanda);
         textViewTitle.setText("level : " + firelion.getLevel());
         textViewLife.setText("" + firelion.getLife());
         textViewSpeed.setText("" + firelion.getSpeed());
